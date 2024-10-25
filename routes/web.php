@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PetController;
+use App\Http\Controllers\CatController;
 
-Route::get('/', [PetController::class, 'index'])->name('pet.index');
-Route::get('/breed/{id}', [PetController::class, 'show'])->name('pet.show');
+Route::get('/', [CatController::class, 'index'])->name('cat.index');
+Route::get('/breed/{id}', [CatController::class, 'show'])->name('cat.show');
